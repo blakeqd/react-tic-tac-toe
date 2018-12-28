@@ -1,6 +1,17 @@
 import * as React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 
+//<li>
+//    <NavLink to={'/'} exact activeClassName='active'>
+//        <span className='glyphicon glyphicon-home'></span> Home
+//                            </NavLink>
+//</li>
+//<li>
+//    <NavLink to={'/counter'} activeClassName='active'>
+//        <span className='glyphicon glyphicon-education'></span> Counter
+//                        </NavLink>
+//</li>
+
 export class NavMenu extends React.Component<{}, {}> {
     public render() {
         return <div className='main-nav'>
@@ -12,24 +23,15 @@ export class NavMenu extends React.Component<{}, {}> {
                         <span className='icon-bar'></span>
                         <span className='icon-bar'></span>
                     </button>
-                    <Link className='navbar-brand' to={ '/' }>ReactTutorial</Link>
+                    <Link className='navbar-brand' to={ '/' }>Tic Tac Toe</Link>
                 </div>
                 <div className='clearfix'></div>
                 <div className='navbar-collapse collapse'>
                     <ul className='nav navbar-nav'>
+
                         <li>
-                            <NavLink to={ '/' } exact activeClassName='active'>
-                                <span className='glyphicon glyphicon-home'></span> Home
-                            </NavLink>
-                        </li>
-                        <li>
-                            <NavLink to={ '/counter' } activeClassName='active'>
-                                <span className='glyphicon glyphicon-education'></span> Counter
-                            </NavLink>
-                        </li>
-                        <li>
-                            <NavLink to={ '/game' } activeClassName='active'>
-                                <span className='glyphicon glyphicon-th-list'></span> game
+                            <NavLink to={ '/' } activeClassName='active'>
+                                <span className='glyphicon glyphicon-th-list'></span> Game
                             </NavLink>
                         </li>
                     </ul>

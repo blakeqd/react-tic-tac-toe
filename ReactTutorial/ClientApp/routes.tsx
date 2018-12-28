@@ -6,10 +6,12 @@ import { FetchData } from './components/FetchData';
 import { Counter } from './components/Counter';
 import { Game } from './components/src';
 
+//<Route exact path='/' component={Home} />
+//<Route path='/counter' component={Counter} />
+//<Route path='/game' component={Game} />
+
 export const routes = <Layout>
-    <Route exact path='/' component={Home} />
-    <Route path='/counter' component={Counter} />
-    <Route path='/game' component={Game} />
+    <Route exact path='/' component={Game} />
 </Layout>;
 
 
