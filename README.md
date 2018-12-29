@@ -1,4 +1,4 @@
 # react-tic-tac-toe
 React Tic Tac Toe
 
-Simple React Tic Tac Toe game built following the React Tutorial.
+React Tic Tac Toe game built with content from the React Tutorial and the ASP.NET Core framework.
